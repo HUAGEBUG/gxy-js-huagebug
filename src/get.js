@@ -9,7 +9,7 @@ var token
 var userId
 var sign
 var jrtime
-var key = 'SCT183817TaSyXAD2OvKBLp1W4YIS3rcFn'
+var key = 'SCT191709Tagi5OVIxEOo8rcxvxBSik8kU'
 
 
 // 网络请求
@@ -126,7 +126,7 @@ function getRb() {
 function getServers() {
   ajax.ajax({
     method: 'get',
-    url: "https://sctapi.ftqq.com/" + key + ".send?title=" + user.obj.title + "&desp=" + user.obj.content
+    url: "https://sctapi.ftqq.com/" + key + ".send?title=" + '日报填写成功！！每日一诗---今日诗：' + user.obj.title + "&desp=" + user.obj.content
   })
 }
 

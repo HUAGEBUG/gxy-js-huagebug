@@ -48,7 +48,7 @@ function getdata() {
   m <= 9 ? m = '0' + m : m = m + 0;
   jrtime = `${y}-${m}-${d} 00:00:00 00:00:00` // 系统返回当前时间
 }
-getdata()
+
 
 // 登录
 function getSign() {
@@ -76,6 +76,8 @@ function getSign() {
       console.log('登录成功');
       token = res.data.token
       userId = res.data.userId
+      getdata()
+      console.log(jrtime)
       getMd5()
       getRb()
 
